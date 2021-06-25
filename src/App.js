@@ -25,7 +25,8 @@ function App() {
 
   return (
     <div className="app">
-      <div className="main">main
+      <div className="main">
+        
       <div className="top">
         <div className="timer">30</div>
       </div>
