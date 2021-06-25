@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
 
-  const [questionNumber, setQuestionNumber] = useState(5)
+  const [questionNumber, setQuestionNumber] = useState(1)
 
   const moneyPyramid = [
         { id: 1, amount: "$ 100" },
@@ -25,7 +25,12 @@ function App() {
 
   return (
     <div className="app">
-      <div className="main">main</div>
+      <div className="main">main
+      <div className="top">
+        <div className="timer">30</div>
+      </div>
+      <div className="bottom">questions and answers</div>
+      </div>
       <div className="pyramid">
         <ul className="moneyList">
           {moneyPyramid.map( m => (
