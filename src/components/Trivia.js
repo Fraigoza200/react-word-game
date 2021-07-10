@@ -11,7 +11,7 @@ export default function Trivia({data, setStop, questionNumber, setQuestionNumber
     },[data, questionNumber])
 
     const delay = (duration, callback) => {
-        setStop(() => {
+        setTimeout(() => {
             callback()
         } ,duration)
     }
@@ -19,7 +19,7 @@ export default function Trivia({data, setStop, questionNumber, setQuestionNumber
     const handleClick = (a) => {
         setSelectedAnswer(a)
         setClassName('answer active')
-        delay(3000, () =>
+        delay(2000, () =>
             setClassName(a.correct ? 'answer correct' : 'answer wrong')
         )
         delay(6000, () => {
