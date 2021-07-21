@@ -41,6 +41,7 @@ export default function Trivia({data, setStop, questionNumber, setQuestionNumber
                     setSelectedAnswer(null)
                 })
             } else {
+                wrongAnswer()
                 delay(1000,() => {
                     setStop(true)
                 })
