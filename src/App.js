@@ -113,14 +113,14 @@ function App() {
       ) : (
         <>
           <div className="main">
-            {timeOut ? (
+            {stop ? (
               <h1 className="endText">You earned: {earned}</h1>
             ) : (
               <>
                 <div className="top">
                   <div className="timer">
                     <Timer
-                      setTimeOut={setTimeOut}
+                      setStop={setStop}
                       questionNumber={questionNumber}
                     />
                   </div>
@@ -130,7 +130,7 @@ function App() {
                     data={data}
                     questionNumber={questionNumber}
                     setQuestionNumber={setQuestionNumber}
-                    setTimeOut={setTimeOut}
+                    setStop={setStop}
                   />
                 </div>
               </>
